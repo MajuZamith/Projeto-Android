@@ -6,10 +6,24 @@ import AppName from './src/componentes/AppName';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Image source={turismo} defaultSource={turismo} style={styles.foto}></Image>
-      <AppName> Acessar os países </AppName>
-      <AppName> Brasil </AppName>
       <Text style={styles.FirstText}> Zamith turismo</Text>
+      <Image source={turismo} defaultSource={turismo} style={styles.foto}></Image>
+      <table> 
+        <tr>
+          <td> Faça o seu Cadastro </td>
+          <td><input type="text" name="Faça o seu Cadastro" size="40"></input><br/></td>
+        </tr>
+
+        <tr>
+          <td> Nome Completo </td>
+          <td><input type="text" name="Nome Completo" size="40"></input><br/></td>
+        </tr>
+
+        <tr>
+          <td> E-mail </td>
+          <td><input type="text" name="E-mail" size="20"></input><br/></td>
+        </tr>
+      </table>
     </View>
   )
 }
@@ -22,8 +36,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   foto:{
-    width:320,
-    height:300,
+    width:700,
+    height:700,
   },
   FirstText:{
     fontSize:40,
